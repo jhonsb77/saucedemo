@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">saucedemo</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f00ad6175696cdcc3052bbefdcce4d8b184bebafa659c1f07105e8f92c43f1b1.html">As A User Of The Saucedemo.Com Portal</a></span>
+                > <span class="truncate-60"><a
+                    href="950804e0d7ede4f0e8a3d0da77398ad858cb081713fe252d359456b9bf6ccae7.html">Confirm order </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 13-09-2023 18:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">As A User Of The Saucedemo.Com Portal </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I want to be able to select an item<br />
+to make your purchase
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="75f53feb5af27e33057c7f07f4028b8a76af31bf87618802ce8b07fd499c8457.html">Confirm Order
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Confirm order
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given that an user is on login page<br>When he login with account "&lt;user&gt;" "&lt;pass&gt;"<br>And he select an article "&lt;article&gt;"<br>And he confirm order on shopping cart<br>And he enter the purchase information "&lt;firstName&gt;" "&lt;lastName&gt;" "&lt;postalCode&gt;"<br>And He verifies the total of the purchase<br>Then he should be to see confirm purchase message</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="4c893a4d7a824c934506df60955127402770995267c4dae330e28588c55dcda5.png" title=" 1: Confirm order ({user=standard_user, pass=secret_sauce, article=Sauce Labs Fleece Jacket, firstName=Juan, lastName=Perez, postalCode=09232})" width="1366"/>
+                <img src="4c893a4d7a824c934506df60955127402770995267c4dae330e28588c55dcda5.png" title=" Given that an user is on login page" width="1366"/>
+                <img src="4c893a4d7a824c934506df60955127402770995267c4dae330e28588c55dcda5.png" title=" When he login with account &quot;standard_user&quot; &quot;secret_sauce&quot;" width="1366"/>
+                <img src="234cdc05a8042c5d0f3152f864fa1beb25a838d70ed0d031360248a89cb21325.png" title=" When he login with account &quot;standard_user&quot; &quot;secret_sauce&quot;" width="1366"/>
+                <img src="5045d2950e11c140eb908ba40b6021d923fb59e1179ae3b2f0c9886f952d8f40.png" title=" When he login with account &quot;standard_user&quot; &quot;secret_sauce&quot;" width="1366"/>
+                <img src="7e5f015288ea4538890efd1fd2945c832e3ad5278d98e2d1ec70f43287ab6628.png" title=" When he login with account &quot;standard_user&quot; &quot;secret_sauce&quot;" width="1366"/>
+                <img src="7e5f015288ea4538890efd1fd2945c832e3ad5278d98e2d1ec70f43287ab6628.png" title=" When he login with account &quot;standard_user&quot; &quot;secret_sauce&quot; (completed)" width="1366"/>
+                <img src="7e5f015288ea4538890efd1fd2945c832e3ad5278d98e2d1ec70f43287ab6628.png" title=" And he select an article &quot;Sauce Labs Fleece Jacket&quot;" width="1366"/>
+                <img src="12ef3c989c14505bfde4466fef4b3670668ac33404cd5d14cc83cdce27d168c3.png" title=" And he select an article &quot;Sauce Labs Fleece Jacket&quot;" width="1366"/>
+                <img src="dc98897bb967d1f499a0a41f6d13639da04b245fe340625a16a46be4b31c352c.png" title=" And he select an article &quot;Sauce Labs Fleece Jacket&quot;" width="1366"/>
+                <img src="dc98897bb967d1f499a0a41f6d13639da04b245fe340625a16a46be4b31c352c.png" title=" And he select an article &quot;Sauce Labs Fleece Jacket&quot; (completed)" width="1366"/>
+                <img src="dc98897bb967d1f499a0a41f6d13639da04b245fe340625a16a46be4b31c352c.png" title=" And he confirm order on shopping cart" width="1366"/>
+                <img src="f16b0c9938e5b4d8f53e0bc8108ea6e19d858355d2b6df232549a1c80776c39b.png" title=" And he confirm order on shopping cart" width="1366"/>
+                <img src="6cbf7adcb473632b34757400f4d195dccb4f151bcc27b9518440b4e7f25e0aeb.png" title=" And he confirm order on shopping cart" width="1366"/>
+                <img src="6cbf7adcb473632b34757400f4d195dccb4f151bcc27b9518440b4e7f25e0aeb.png" title=" And he confirm order on shopping cart (completed)" width="1366"/>
+                <img src="6cbf7adcb473632b34757400f4d195dccb4f151bcc27b9518440b4e7f25e0aeb.png" title=" And he enter the purchase information &quot;Juan&quot; &quot;Perez&quot; &quot;09232&quot;" width="1366"/>
+                <img src="ccc1f8a67b89971027deffe309debad36b4aeb97e68c4e18b4dbf62df0a4b72a.png" title=" And he enter the purchase information &quot;Juan&quot; &quot;Perez&quot; &quot;09232&quot;" width="1366"/>
+                <img src="6ae667d4160ee1bcab14d3d95659e0262941ea1965c48cfa87e8d10bffc45d0b.png" title=" And he enter the purchase information &quot;Juan&quot; &quot;Perez&quot; &quot;09232&quot;" width="1366"/>
+                <img src="752be59f4a419cb88446d3195f06664234f3d3a93d1847494930b7d579563e48.png" title=" And he enter the purchase information &quot;Juan&quot; &quot;Perez&quot; &quot;09232&quot;" width="1366"/>
+                <img src="899a10d5e771fbcebbcc25b43d26967e7e9f1db615ed71e3978f5cb62f03e538.png" title=" And he enter the purchase information &quot;Juan&quot; &quot;Perez&quot; &quot;09232&quot;" width="1366"/>
+                <img src="899a10d5e771fbcebbcc25b43d26967e7e9f1db615ed71e3978f5cb62f03e538.png" title=" And he enter the purchase information &quot;Juan&quot; &quot;Perez&quot; &quot;09232&quot; (completed)" width="1366"/>
+                <img src="899a10d5e771fbcebbcc25b43d26967e7e9f1db615ed71e3978f5cb62f03e538.png" title=" And He verifies the total of the purchase" width="1366"/>
+                <img src="c04cde5a87c701550f3a1314d871d72a2f9636106d9906a5ea29bdaf4238dfb4.png" title=" And He verifies the total of the purchase" width="1366"/>
+                <img src="c04cde5a87c701550f3a1314d871d72a2f9636106d9906a5ea29bdaf4238dfb4.png" title=" And He verifies the total of the purchase (completed)" width="1366"/>
+                <img src="c04cde5a87c701550f3a1314d871d72a2f9636106d9906a5ea29bdaf4238dfb4.png" title=" Then he should be to see confirm purchase message" width="1366"/>
+                <img src="c04cde5a87c701550f3a1314d871d72a2f9636106d9906a5ea29bdaf4238dfb4.png" title=" Then he should be to see confirm purchase message (completed)" width="1366"/>
+                <img src="c04cde5a87c701550f3a1314d871d72a2f9636106d9906a5ea29bdaf4238dfb4.png" title=" 1: Confirm order ({user=standard_user, pass=secret_sauce, article=Sauce Labs Fleece Jacket, firstName=Juan, lastName=Perez, postalCode=09232}) (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.1.15</span>
+</div>
+</body>
+</html>
