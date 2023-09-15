@@ -5,7 +5,7 @@
   <img src="https://serenity-bdd.info/wp-content/uploads/elementor/thumbs/serenity-bdd-pac9onzlqv9ebi90cpg4zsqnp28x4trd1adftgkwbq.png" title="Serenity"> 
   </a>
   <a href="https://cucumber.io/"> 
-  <img src="https://ichi.pro/assets/images/max/724/1*KalezkxhSguQlz-LGv6F4A.png" title="Cucumber BDD"> 
+  <img src="https://blog.softtek.com/hubfs/blogs/innovationlabs/cucumberlogo.png" title="Cucumber BDD"> 
   </a>
   <a href="https://www.selenium.dev/"> 
   <img src="https://selenium-python.readthedocs.io/_static/logo.png" title="Selenium" > 
