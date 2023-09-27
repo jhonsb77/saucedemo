@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="As a user of the saucedemo.com portal" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-13T23:28:45" hostname="LAPTOP-548RBPKP" time="120.62">
+<testsuite name="As a user of the saucedemo.com portal" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-27T20:35:50" hostname="LAPTOP-548RBPKP" time="125.586">
   <properties/>
-  <testcase name="Confirm order" classname="As a user of the saucedemo.com portal" time="120.62"/>
+  <testcase name="Confirm order" classname="As a user of the saucedemo.com portal" time="125.586"/>
   <system-out><![CDATA[articulo presente en el carrito
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jhons/IdeaProjects/saucedemo/src/test/resources/features/Purchase.feature
@@ -13,37 +13,26 @@
 
 Confirm order(as-a-user-of-the-saucedemo.com-portal;confirm-order)
 --------------------------------------------------------------------------------
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.33.0 (resolved driver for Firefox 117)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.33.0 (resolved driver for Firefox 118)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\jhons\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
-1694647732404	geckodriver	INFO	Listening on 127.0.0.1:59053
-1694647733620	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58932" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jhons\\AppData\\Local\\Temp\\rust_mozprofileiQ2Snc"
+1695846961506	geckodriver	INFO	Listening on 127.0.0.1:64106
+1695846962363	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54952" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jhons\\AppData\\Local\\Temp\\rust_mozprofileJATTDq"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1694647740482	Marionette	INFO	Marionette enabled
+1695846970219	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
-1694647741162	Marionette	INFO	Listening on port 64349
-WebDriver BiDi listening on ws://127.0.0.1:58932
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-Read port: 64349
-1694647754945	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1695846970768	Marionette	INFO	Listening on port 49713
+Read port: 49713
+WebDriver BiDi listening on ws://127.0.0.1:54952
+1695846976320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
 console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
-DevTools listening on ws://127.0.0.1:58932/devtools/browser/cb976a43-f4fa-41a9-94a5-ac590c6c3715
-sep 13, 2023 6:29:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+DevTools listening on ws://127.0.0.1:54952/devtools/browser/d88030c3-5bd6-4ba8-bbaa-cc4bf97b5507
+sep. 27, 2023 3:36:47 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-1694647834836	Marionette	INFO	Stopped listening on port 64349
+1695847066798	Marionette	INFO	Stopped listening on port 49713
 Dynamically enable window occlusion 1
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  

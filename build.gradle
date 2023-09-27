@@ -23,6 +23,7 @@ buildscript {
     dependencies {
         classpath("net.serenity-bdd:serenity-gradle-plugin:${serenityCoreVersion}")
         classpath("net.serenity-bdd:serenity-single-page-report:${serenityCoreVersion}")
+        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:4.4.0.3356")
     }
 }
 
@@ -30,6 +31,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: 'org.sonarqube'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'ISO-8859-1'
@@ -72,5 +74,6 @@ test {
     systemProperty 'environment', System.getProperty('environment', '')
     systemProperty 'cucumber.filter.tags', System.getProperty('cucumber.filter.tags')
 }
+
 gradle.startParameter.continueOnFailure = true
 test.finalizedBy(aggregate)
