@@ -11,7 +11,7 @@ public class SelectDriver implements DriverSource {
     public WebDriver seleccionarTipoDriver() {
         MyDriverSetup myDriverSetup = new MyDriverSetup();
         switch (NAVEGADOR_ACTUAL.trim().toLowerCase()){
-            case "firefox":
+            case NAVEGADOR_ACTUAL:
                 Serenity.recordReportData().withTitle("Navegador").andContents(NAVEGADOR_ACTUAL);
                 driver = myDriverSetup.webFirefoxDriver(NAVEGADOR_ACTUAL);
                 break;
