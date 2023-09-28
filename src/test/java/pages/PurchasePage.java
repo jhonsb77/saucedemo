@@ -15,7 +15,6 @@ import static org.junit.Assert.fail;
 public class PurchasePage extends PageObject {
 
     public static String art;
-    private static WebElementFacade btnArticle;
 
     @FindBy(id = "user-name")
     WebElementFacade txtUser;
@@ -77,7 +76,7 @@ public class PurchasePage extends PageObject {
         waitFor(ExpectedConditions.titleIs("Swag Labs"));
         try{
             art = article;
-            btnArticle = find(By.xpath("//div[text()='"+article+"']"));
+            WebElementFacade btnArticle = find(By.xpath("//div[text()='" + article + "']"));
             if(!btnArticle.isPresent()){
                 posicionarObjeto(btnArticle);
             }

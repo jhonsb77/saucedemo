@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="As a user of the saucedemo.com portal" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-27T20:35:50" hostname="LAPTOP-548RBPKP" time="125.586">
+<testsuite name="As a user of the saucedemo.com portal" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-28T00:13:06" hostname="LAPTOP-548RBPKP" time="99.767">
   <properties/>
-  <testcase name="Confirm order" classname="As a user of the saucedemo.com portal" time="125.586"/>
+  <testcase name="Confirm order" classname="As a user of the saucedemo.com portal" time="99.767"/>
   <system-out><![CDATA[articulo presente en el carrito
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jhons/IdeaProjects/saucedemo/src/test/resources/features/Purchase.feature
@@ -15,24 +15,24 @@ Confirm order(as-a-user-of-the-saucedemo.com-portal;confirm-order)
 --------------------------------------------------------------------------------
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.33.0 (resolved driver for Firefox 118)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\jhons\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
-1695846961506	geckodriver	INFO	Listening on 127.0.0.1:64106
-1695846962363	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54952" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jhons\\AppData\\Local\\Temp\\rust_mozprofileJATTDq"
+1695859992613	geckodriver	INFO	Listening on 127.0.0.1:58684
+1695859993053	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51035" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jhons\\AppData\\Local\\Temp\\rust_mozprofileeFwKwg"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1695846970219	Marionette	INFO	Marionette enabled
+1695859998357	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
-1695846970768	Marionette	INFO	Listening on port 49713
-Read port: 49713
-WebDriver BiDi listening on ws://127.0.0.1:54952
-1695846976320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1695859998907	Marionette	INFO	Listening on port 54663
+Read port: 54663
+WebDriver BiDi listening on ws://127.0.0.1:51035
+1695860002235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
 console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
-DevTools listening on ws://127.0.0.1:54952/devtools/browser/d88030c3-5bd6-4ba8-bbaa-cc4bf97b5507
-sep. 27, 2023 3:36:47 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+DevTools listening on ws://127.0.0.1:51035/devtools/browser/6abd598c-79e2-4ddd-8315-8930f743c3d8
+sep. 27, 2023 7:13:45 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-1695847066798	Marionette	INFO	Stopped listening on port 49713
+1695860078516	Marionette	INFO	Stopped listening on port 54663
 Dynamically enable window occlusion 1
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
