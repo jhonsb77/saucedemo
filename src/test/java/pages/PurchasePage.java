@@ -15,6 +15,7 @@ import static org.junit.Assert.fail;
 public class PurchasePage extends PageObject {
 
     public static String art;
+    private static final String titlePage = "Swag Labs";
 
     @FindBy(id = "user-name")
     WebElementFacade txtUser;
@@ -66,14 +67,14 @@ public class PurchasePage extends PageObject {
 
 
     public void heLoginWithAccount(String user, String pass) {
-        waitFor(ExpectedConditions.titleIs("Swag Labs"));
+        waitFor(ExpectedConditions.titleIs(titlePage));
         txtUser.typeAndTab(user);
         txtPass.typeAndTab(pass);
         btnLogin.click();
     }
 
     public void heSelectAnArticle(String article) {
-        waitFor(ExpectedConditions.titleIs("Swag Labs"));
+        waitFor(ExpectedConditions.titleIs(titlePage));
         try{
             art = article;
             WebElementFacade btnArticle = find(By.xpath("//div[text()='" + article + "']"));
@@ -91,7 +92,7 @@ public class PurchasePage extends PageObject {
 
     public void heConfirmOrderOnShoppingCart() {
         btnCart.click();
-        waitFor(ExpectedConditions.titleIs("Swag Labs"));
+        waitFor(ExpectedConditions.titleIs(titlePage));
         if(find(By.xpath("//div[text()='"+art+"']")).isPresent()){
             System.out.println("articulo presente en el carrito");
         }else{
@@ -118,7 +119,7 @@ public class PurchasePage extends PageObject {
     }
 
     public void heShouldBeToSeeConfirmPurchaseMessage() {
-        waitFor(ExpectedConditions.titleIs("Swag Labs"));
+        waitFor(ExpectedConditions.titleIs(titlePage));
         assertThat("Error al completar la orden ",
                 lblThankOrder.getText().equals("Thank you for your order!"));
         Serenity.recordReportData().withTitle("Orden completada con exito")
