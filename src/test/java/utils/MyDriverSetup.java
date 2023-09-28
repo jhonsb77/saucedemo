@@ -21,9 +21,11 @@ public class MyDriverSetup {
 
     public WebDriver webFirefoxDriver(String navegador) {
         try {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver(firefoxOptions);
-            driver.manage().window().maximize();
+            if(navegador.equals("firefox")){
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver(firefoxOptions);
+                driver.manage().window().maximize();
+            }
         } catch (Exception e) {
             log.warn("Falló al crear driver desktop firefox");
         }
