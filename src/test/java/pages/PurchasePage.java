@@ -128,8 +128,7 @@ public class PurchasePage extends PageObject {
 
     public void posicionarObjeto(WebElementFacade element){
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
-        WebElementFacade elementFacade =
-                (WebElementFacade) js.executeScript("arguments[0].scrollIntoView(true);", element);
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
 }
