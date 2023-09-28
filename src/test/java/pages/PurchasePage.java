@@ -8,6 +8,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
@@ -16,6 +19,7 @@ public class PurchasePage extends PageObject {
 
     public static String art;
     private static final String TITLE = "Swag Labs";
+    final Logger LOG = Logger.getLogger(String.valueOf(getClass()));
 
     @FindBy(id = "user-name")
     WebElementFacade txtUser;
@@ -94,7 +98,7 @@ public class PurchasePage extends PageObject {
         btnCart.click();
         waitFor(ExpectedConditions.titleIs(TITLE));
         if(find(By.xpath("//div[text()='"+art+"']")).isPresent()){
-            System.out.println("articulo presente en el carrito");
+            LOG.log(Level.INFO,"articulo presente en el carrito");
         }else{
             fail("fallo en agregar el articulo al carrito");
         }
