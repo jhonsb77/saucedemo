@@ -40,3 +40,23 @@ Instrucciones de ejecucion
    ![img_2.png](img_2.png)
 4. Seleccionar el archivo runner, dar click derecho y seleccionar la opcion "Run"
 5. Al finalizar la ejecucion los reportes de la misma se podran visualizar en el archivo index.html ubicado en la ruta: saucedemo\target\site\serenity
+
+
+CI
+
+URL jenkins: https://70e4-181-237-226-23.ngrok-free.app/
+- user: admin
+- pass: 1234
+- 
+El proyecto cuenta con 2 jobs:
+1. saucedemo: en este job se encuentra el proyecto para la ejecucion de los casos de prueba.
+Para ejecutarlo se selecciona la opcion build with parametres , seleccionar el escenario a ejecutar
+y dar click en ejecucion, al finalizar el reporte se podra visualizar en la pestaña serenity report.
+2. saucedemo-sonar: en este job se encuentra el analisis del codigo utilizando sonar.
+Para ejecutarlo, selecciona la opcion construir ahora. Al finalizar la ejecucion el reporte se podra
+visualizar en la siguiente url:
+
+URL sonarqube: https://4282-181-237-226-23.ngrok-free.app/
+- user: admin
+- pass: 1234
+
