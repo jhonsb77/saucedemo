@@ -15,7 +15,6 @@ public class MyDriverSetup {
 
     private final Logger log = LoggerFactory.getLogger(MyDriverSetup.class);
     WebDriver driver = null;
-    Map<String, Object> prefs = new HashMap<String, Object>();
     FirefoxOptions firefoxOptions = new FirefoxOptions();
     ChromeOptions chromeOptions = new ChromeOptions();
 
