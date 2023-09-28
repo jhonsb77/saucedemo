@@ -19,7 +19,7 @@ public class PurchasePage extends PageObject {
 
     public static String art;
     private static final String TITLE = "Swag Labs";
-    final Logger LOG = Logger.getLogger(String.valueOf(getClass()));
+    final Logger log = Logger.getLogger(String.valueOf(getClass()));
 
     @FindBy(id = "user-name")
     WebElementFacade txtUser;
@@ -98,7 +98,7 @@ public class PurchasePage extends PageObject {
         btnCart.click();
         waitFor(ExpectedConditions.titleIs(TITLE));
         if(find(By.xpath("//div[text()='"+art+"']")).isPresent()){
-            LOG.log(Level.INFO,"articulo presente en el carrito");
+            log.log(Level.INFO,"articulo presente en el carrito");
         }else{
             fail("fallo en agregar el articulo al carrito");
         }
